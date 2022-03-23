@@ -2,3 +2,51 @@
   font-family: norse-bold;
   src: url(../assets/fonts/Norse-Bold.otf)
 }
+
+:root {
+  font-size: 18px;
+  --header-background-color: hsla(0, 100%, 0%, 0.6);
+  --main-white: hsl(0, 100%, 100%);
+}
+
+*, *::before, *::after {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+}
+
+main {
+  display: flex;
+  min-height: 100vh;
+}
+
+.hero {
+  background-image: url("../assets/images/halie-west-25xggax4bSA-unsplash.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding-top: 10rem;
+  min-width: 40%
+}
+
+.banner {
+  align-items: center;
+  background-color: var(--header-background-color);
+  color: var(--main-white);
+  display: flex;
+  justify-content: center;
+  padding: 8px;
+}
+
+.logo {
+  width: 5rem;
+  height: auto;
+}
+
+h1 {
+  font-family: norse-bold;
+  font-size: 5rem;
+  margin: 0;
+}
