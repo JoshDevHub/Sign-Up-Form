@@ -71,6 +71,7 @@ h1 {
 
 .form-inputs {
   background-color: var(--main-white);
+  box-shadow: 3px 3px 6px 0px hsla(0, 0%, 50%, 0.5);
   padding-left: 36px;
 }
 
@@ -93,7 +94,7 @@ h1 {
 
 input:focus {
   border: 1px solid var(--input-focus-border);
-  box-shadow: 3px 3px 6px 0px hsla(0, 0%, 0%, 0.5);
+  box-shadow: 0px 1px 3px 0px var(--input-border-color);
 }
 
 input {
