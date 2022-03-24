@@ -111,12 +111,17 @@ input:focus {
   outline: 1px solid var(--input-focus-border);
 }
 
+@media (min-width: 1750px) {
+  .form-item {
+    width: 300px;
+  }
+}
+
 .form-item {
   display: flex;
   flex-direction: column;
   list-style: none;
   margin: 0 64px 16px 0;
-  max-width: 300px;
   min-width: 240px;
 }
 
