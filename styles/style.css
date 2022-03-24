@@ -10,10 +10,15 @@
   --input-focus-border: hsl(231,66%,52%);
   --main-white: hsl(0, 100%, 100%);
   --off-white: hsl(210,19%,98%);
+  --submit-section-green: hsl(92, 20%, 35%);
 }
 
 *, *::before, *::after {
   box-sizing: border-box;
+}
+
+html {
+  font-family: sans-serif;
 }
 
 body {
@@ -59,7 +64,6 @@ h1 {
 }
 
 .cta-text {
-  font-family: sans-serif;
   font-size: 1.5rem;
   font-weight: bold;
   padding: 72px 200px 36px 36px;
@@ -71,7 +75,6 @@ h1 {
 }
 
 .form-inputs h2 {
-  font-family: sans-serif;
   font-size: 1.5rem;
   padding-top: 18px;
 }
@@ -79,14 +82,12 @@ h1 {
 .form-controls {
   display: flex;
   flex-flow: row wrap;
-  height: 260px;
+  height: 240px;
 }
 
 .form-controls label {
   letter-spacing: 2px;
-  font-family: sans-serif;
   font-size: 0.75rem;
-  margin-bottom: 4px;
   text-transform: uppercase;
 }
 
@@ -120,6 +121,30 @@ form li {
   list-style: none;
 }
 
+.submit-form {
+  margin-left: 36px;
+  padding-top: 32px;
+}
+
 button {
-  background-color: hsl(92, 20%, 35%);
+  background-color: var(--submit-section-green);
+  border: 2px solid transparent;
+  border-radius: 10px;
+  color: var(--main-white);
+  font-size: 1rem;
+  font-weight: bold;
+  padding: 0.75em 3em;
+}
+
+button:hover {
+  background: transparent;
+  border: 2px solid var(--submit-section-green);
+  color: var(--submit-section-green);
+  cursor: pointer;
+}
+
+.submit-form a {
+  color: var(--submit-section-green);
+  font-weight: bold;
+  text-decoration: none;
 }
