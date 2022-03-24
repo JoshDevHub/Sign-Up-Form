@@ -10,14 +10,14 @@ const passwordsDoMatch = () => {
 
 const showError = () => {
   [password, confirmPassword].forEach((pwd) => pwd.classList.add('error'));
-  errorMessage.textContent = '* Passwords do not match.';
+  errorMessage.style.visibility = 'visible';
 }
 
 const passwordValidationHandler = () => {
   if (passwordsDoMatch()) {
     password.setCustomValidity('');
     [password, confirmPassword].forEach((pwd) => pwd.classList.remove('error'));
-    errorMessage.textContent = '';
+    errorMessage.style.visibility = 'hidden';
     errorMessage.className = 'error-msg';
   } else {
     password.setCustomValidity('Passwords do not match');
