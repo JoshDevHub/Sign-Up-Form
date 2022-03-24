@@ -6,6 +6,8 @@
 :root {
   font-size: 18px;
   --header-background-color: hsla(0, 100%, 0%, 0.6);
+  --input-border-color: hsl(220, 13%, 91%);
+  --input-focus-border: hsl(231,66%,52%);
   --main-white: hsl(0, 100%, 100%);
   --off-white: hsl(210,19%,98%);
 }
@@ -65,6 +67,53 @@ h1 {
 
 .form-inputs {
   background-color: var(--main-white);
+  padding-left: 36px;
+}
+
+.form-inputs h2 {
+  font-family: sans-serif;
+  font-size: 1.5rem;
+  padding-top: 18px;
+}
+
+.form-controls {
+  display: flex;
+  flex-flow: row wrap;
+  height: 260px;
+}
+
+.form-controls label {
+  letter-spacing: 2px;
+  font-family: sans-serif;
+  font-size: 0.75rem;
+  margin-bottom: 4px;
+  text-transform: uppercase;
+}
+
+input:focus {
+  border: 1px solid var(--input-focus-border);
+  box-shadow: 3px 3px 6px 0px hsla(0, 0%, 0%, 0.5);
+}
+
+input {
+  border: 1px solid var(--input-border-color);
+  border-radius: 5px;
+  height: 32px;
+  width: 300px;
+}
+
+input:focus {
+  outline: 1px solid var(--input-focus-border);
+}
+
+.form-item {
+  display: flex;
+  flex-direction: column;
+  margin: 16px 0;
+}
+
+.form-item {
+  margin-right: 64px;
 }
 
 form li {

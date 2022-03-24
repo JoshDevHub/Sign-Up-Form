@@ -21,33 +21,35 @@
       You <em>know</em> you want to.
       </p>
       <form action="#" method="post">
-        <div class="form-inputs">
+        <section class="form-inputs">
           <h2 class="form-heading">Let's do this!</h2>
-          <li>
-            <label for="first-name">First Name</label>
-            <input type="text" name="first-name" id="first-name">
-          </li>
-          <li>
-            <label for="last-name">Last Name</label>
-            <input type="text" name="last-name" id="last-name">
-          </li>
-          <li>
-            <label for="email">Email</label>
-            <input type="email" name="email" id="email">
-          </li>
-          <li>
-            <label for="phone-number">Phone Number</label>
-            <input type="tel" name="phone-number" id="phone-number">
-          </li>
-          <li>
-            <label for="password">Password</label>
-            <input type="password" name="password" id="password">
-          </li>
-          <li>
-            <label for="confirm-password">Confirm Password</label>
-            <input type="password" name="confirm-password" id="confirm-password">
-          </li>
-        </div>
+          <div class="form-controls">
+            <li class="form-item">
+              <label for="first-name">First Name</label>
+              <input type="text" name="first-name" id="first-name" required>
+            </li>
+            <li class="form-item">
+              <label for="last-name">Last Name</label>
+              <input type="text" name="last-name" id="last-name" required>
+            </li>
+            <li class="form-item">
+              <label for="email">Email</label>
+              <input type="email" name="email" id="email" required>
+            </li>
+            <li class="form-item">
+              <label for="phone-number">Phone Number</label>
+              <input type="tel" name="phone-number" id="phone-number" required>
+            </li>
+            <li class="form-item">
+              <label for="password">Password</label>
+              <input type="password" name="password" id="password" required>
+            </li>
+            <li class="form-item">
+              <label for="confirm-password">Confirm Password</label>
+              <input type="password" name="confirm-password" id="confirm-password" required>
+            </li>
+          </div>
+        </section>
         <div class="submit-form">
           <button type="submit">Create Account</button>
           <p class="log-in-prompt">Already have an account? <a href="#">Log in</a></p>
