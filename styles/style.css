@@ -121,6 +121,26 @@ form li {
   list-style: none;
 }
 
+input[type='password']:invalid {
+  border-color: red;
+}
+
+input:focus:invalid {
+  outline: none;
+}
+
+.error {
+  width: 100%;
+  padding: 0;
+  font-size: 80%;
+  color: red;
+}
+
+.error.active {
+  font-size: 80%;
+  padding: 0.3em;
+}
+
 .submit-form {
   margin-left: 36px;
   padding-top: 32px;
